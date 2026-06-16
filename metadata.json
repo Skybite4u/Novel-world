@@ -1,0 +1,6 @@
+{
+  "name": "Novel World",
+  "description": "A modern Bangla novel publishing platform where users can publish, read, bookmark, like, and comment on novels.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
