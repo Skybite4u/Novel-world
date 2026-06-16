@@ -116,6 +116,14 @@ export default function App() {
     }
   }, [allUsers]);
 
+  // Protect protected views and prompt login
+  useEffect(() => {
+    if ((currentView === 'dashboard' || currentView === 'admin') && !currentUser) {
+      setCurrentView('home');
+      setShowAuthModal(true);
+    }
+  }, [currentView, currentUser]);
+
   // Refresh active reader metrics
   const refreshActiveLikesBookmarks = () => {
     if (!selectedNovel || !currentUser) {

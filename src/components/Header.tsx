@@ -62,8 +62,13 @@ export default function Header({
               onClick={onOpenHome}
               className="flex items-center gap-2.5 text-2xl font-bold text-emerald-700 hover:text-emerald-600 dark:text-emerald-400 font-sans tracking-tight focus:outline-none transition-all group"
             >
-              <div className="bg-emerald-100 dark:bg-emerald-950/60 p-2 rounded-xl group-hover:scale-105 transition-transform">
-                <BookOpen className="w-6 h-6 text-emerald-700 dark:text-emerald-400" />
+              <div className="w-10 h-10 rounded-xl overflow-hidden shadow-md border border-emerald-500/20 group-hover:scale-105 transition-transform">
+                <img 
+                  src="/src/assets/images/logo_1781596643815.jpg" 
+                  alt="Novel World Logo" 
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover" 
+                />
               </div>
               <span className="bg-gradient-to-r from-emerald-700 to-teal-600 dark:from-emerald-400 dark:to-teal-300 bg-clip-text text-transparent">
                 নভেল ওয়ার্ল্ড
